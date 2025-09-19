@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Career Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <div class="container home" id="home">
+        <img src="{{ url_for('static', filename='assets/turtle-logo.png') }}" alt="App Logo" class="logo" />
+        <h1 class="main-heading">Career Guider</h1>
+        <p class="description">Explore your potential and discover the perfect career path in by your passion.</p>
+        <button onclick="startQuiz()" id="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="container quiz hidden" id="quiz-container">
+        <div class="progress-bar"><div id="progress"></div></div>
+        <div id="question-counter"></div>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit-btn" class="hidden">Next</button>
+    </div>
+
+    <div class="container result hidden" id="result-container">
+        <h2>Your Recommended Career:</h2>
+        <div id="career"></div>
+        <p id="career-desc"></p>
+        <button onclick="restartQuiz()" id="restart-btn">Restart Quiz</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
