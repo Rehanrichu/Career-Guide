@@ -14,4 +14,4 @@ Key Features:-
 
 PURPOSE:-
 
-To guide individuals in finding a career aligned with their skills, passions, and goals.
+To guide individuals in finding a career aligned with their skills, passions, and goals. 
